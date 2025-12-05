@@ -383,10 +383,11 @@ kubectl apply -f https://raw.githubusercontent.com/qemus/qemu/refs/heads/master/
 
 /src/display.sh
 
-replaced 
+replace
 
-```addPackage "xserver-xorg-video-intel" "Intel GPU drivers"
-addPackage "qemu-system-modules-opengl" "OpenGL module"
+```
+   addPackage "xserver-xorg-video-intel" "Intel GPU drivers"
+   addPackage "qemu-system-modules-opengl" "OpenGL module"
 ```
 with 
 
