@@ -382,13 +382,15 @@ kubectl apply -f https://raw.githubusercontent.com/qemus/qemu/refs/heads/master/
 ## Files changed:
 
 /src/display.sh
-,,,replaced 
-addPackage "xserver-xorg-video-intel" "Intel GPU drivers"
+
+replaced 
+
+```addPackage "xserver-xorg-video-intel" "Intel GPU drivers"
 addPackage "qemu-system-modules-opengl" "OpenGL module"
-'''
+```
 with 
 
-'''# Install user-space GPU libraries only
+```# Install user-space GPU libraries only
 addPackage "mesa-utils" "OpenGL test utilities"
 addPackage "mesa-va-drivers" "VA-API hardware video acceleration"
 addPackage "libdrm2" "Direct Rendering Manager library"
@@ -396,7 +398,7 @@ addPackage "libgl1-mesa-dri" "Mesa DRI drivers"
 addPackage "libvulkan1" "Vulkan support"
 addPackage "vainfo" "VA-API info tool"
 addPackage "qemu-system-modules-opengl" "QEMU OpenGL/egl-headless module"
-,,,
+```
 
 ## Stars 🌟
 [![Stars](https://starchart.cc/qemus/qemu.svg?variant=adaptive)](https://starchart.cc/qemus/qemu)
